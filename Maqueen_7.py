@@ -9,4 +9,4 @@ robot.mover_celda()
 robot.mover_celda()
 robot.girar_izquierda()
 robot.mover_celda()
-#hay que cambiar los segundos en la funcion movercelda de 500 a 300
+#hay que cambiar los segundos en la funcion movercelda de 500 a 400
