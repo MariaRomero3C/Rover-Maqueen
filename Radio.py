@@ -21,21 +21,21 @@ up_arrow = Image("00900:"
                  "00900")
 
 radio.on()
-radio.config(channel=12, group=0)
+radio.config(channel=18, group=0)
 
 while True:
     if button_a.is_pressed() and button_b.is_pressed():
         radio.send('vuelta')
-        display.show(Image.HAPPY)  # Muestra la flecha hacia arriba
+        display.show(Image.HAPPY)  
         sleep(100)
     elif button_a.is_pressed():
-        radio.send('forward')
-        display.show(Image.ARROW_N)  # Muestra la flecha hacia la izquierda
+        radio.send('izquierda')
+        display.show(Image.ARROW_W)  
         sleep(100)
     elif button_b.is_pressed():
-        radio.send('backwards')
-        display.show(Image.ARROW_S)  # Muestra la flecha hacia la derecha
+        radio.send('derecha')
+        display.show(Image.ARROW_E)  
         sleep(100)
     else:
-        display.clear()  # Limpia la pantalla si no se presiona ningún botón
+        display.clear()  
     sleep(100)
