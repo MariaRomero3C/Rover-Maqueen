@@ -1,5 +1,5 @@
 from microbit import *
-from Maqueen import *
+from maqueen import *
 
 robot = Maqueen()
 
