@@ -1,4 +1,3 @@
-# Imports go at the top
 from microbit import *
 from maqueen import *
 
@@ -11,12 +10,12 @@ while True:
         robot.motor_stop_all()
     elif sensor_1 == 0 and sensor_2 == 1:
         robot.set_motor(0,0)
-        robot.set_motor(1,100)
+        robot.set_motor(1,255)
     elif sensor_1 == 1 and sensor_2 == 0:
-        robot.set_motor(0,100)
+        robot.set_motor(0,255)
         robot.set_motor(1,0)
     elif sensor_1 == 0 and sensor_2 == 0:
-        robot.set_motor(0,200)
-        robot.set_motor(1,200)    
+        robot.set_motor(0,50)
+        robot.set_motor(1,50)    
     else:
         display.show(Image.HEART)
